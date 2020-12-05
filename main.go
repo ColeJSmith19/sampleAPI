@@ -186,7 +186,6 @@ func getPeople(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(allNames)
 
-	fmt.Println("Success!")
 }
 
 type userDB struct {
